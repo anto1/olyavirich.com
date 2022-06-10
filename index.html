@@ -119,8 +119,9 @@
     const num = document.querySelector('#num');
     const imagesPositions = [];
     num.innerText = imagesCount;
-
-    console.log("Image height " + $("#imageFirst").height + ", window height" + $(window).height);
+    
+    console.log("Window height" + $(window).height);
+    console.log("Image height " + $("#imageFirst").naturalHeight);
     difference = $("#imageFirst").height -  $(window).height;
     difference = difference/2;
     console.log("Top margin should be " + difference);
