@@ -27,7 +27,7 @@
     h3 {top: 24px; left: 240px;}
     p, footer {font-family: "btp", "Inter", helvetica, sans-serif; font-size: 1.5em; color: #121214; display: block;}
     p { margin: 0 auto 24px auto;  text-align: center; }
-    footer {margin: 25vh 0 48px 0}
+    footer {position: fixed; left: 24px; bottom: 48px;}
 
     a {text-decoration: underline; color: #121214;}
     a:hover {text-decoration: underline dotted;}
@@ -119,7 +119,7 @@
     const num = document.querySelector('#num');
     const imagesPositions = [];
     num.innerText = imagesCount;
-    
+
     console.log("Window height" + $(window).height);
     console.log("Image height " + $("#imageFirst").naturalHeight);
     difference = $("#imageFirst").height -  $(window).height;
