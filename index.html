@@ -217,7 +217,7 @@
       window.addEventListener('scroll', function(e) {
         console.log(window.scrollY);
         console.log($(window).height()/2);
-        num.innerText = getImageNumber(window.scrollY - $(window).height() / 2, imagesPositions) + 1 + "/" + imagesCount;
+        num.innerText = getImageNumber(window.scrollY, imagesPositions) + "/" + imagesCount;
       });
 
     });
