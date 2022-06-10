@@ -210,6 +210,9 @@
             if (i < 1) {
               return 1;
             }
+            if (typeof i == 'undefined') {
+              return imagesCount;
+            }
             return i;
           }
         }
