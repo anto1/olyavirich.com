@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>In my Shadow over the Region</title>
-
   <meta charset="utf-8">
   <meta name="author" content="Olga Virich">
   <meta name="designer" content=”Anton Prokopev”>
@@ -11,25 +10,72 @@
   <meta name="distribution" content="web">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <meta http-equiv="Content-Script-Type" content="text/javascript">
-
   <style>
     @font-face {
       font-family: "btp";
       src: url("btp.woff.ttf") format('woff');
     }
 
-    body {margin: 96px 24px 24px 24px;}
-    img {display: block; margin: 25vh auto 24px auto;}
+    body {
+      margin: 96px 24px 24px 24px;
+    }
 
-    h1, h2, h3 {position: fixed; font-family: "btp", "Inter", helvetica, sans-serif; line-height: 1em; font-size: 40px; color: #121214; margin: 0;}
-    h1 {top: 24px; left: 24px;}
-    h2 {top: 24px; right: 24px;}
-    h3 {top: 24px; left: 240px;}
-    p, footer {font-family: "btp", "Inter", helvetica, sans-serif; font-size: 1.5em; color: #121214; display: block;}
-    p { margin: 0 auto 24px auto;  text-align: center; }
-    footer {margin: 24vh, 0px, 48px, 24px;}
-    a {text-decoration: underline; color: #121214;}
-    a:hover {text-decoration: underline dotted;}
+    img {
+      display: block;
+      margin: 25vh auto 24px auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      position: fixed;
+      font-family: "btp", "Inter", helvetica, sans-serif;
+      line-height: 1em;
+      font-size: 40px;
+      color: #121214;
+      margin: 0;
+    }
+
+    h1 {
+      top: 24px;
+      left: 24px;
+    }
+
+    h2 {
+      top: 24px;
+      right: 24px;
+    }
+
+    h3 {
+      top: 24px;
+      left: 240px;
+    }
+
+    p,
+    footer {
+      font-family: "btp", "Inter", helvetica, sans-serif;
+      font-size: 1.5em;
+      color: #121214;
+      display: block;
+    }
+
+    p {
+      margin: 0 auto 24px auto;
+      text-align: center;
+    }
+
+    footer {
+      margin: 24vh, 0px, 48px, 24px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #121214;
+    }
+
+    a:hover {
+      text-decoration: underline dotted;
+    }
 
     .menu {
       display: block;
@@ -38,14 +84,35 @@
       left: 24px;
     }
 
-    .menu img {display: block; margin: 8px 0; width: 50px;}
+    .menu img {
+      display: block;
+      margin: 8px 0;
+      width: 50px;
+    }
 
     @media screen and (max-width: 1128px) {
-      body {margin: 30vh 24px 24px 24px;}
-      img {width: 100%; margin: 10vh auto 24px auto;}
-      h1, h2 {font-size: 5em;}
-      p, footer {font-size: 2.5em;}
-      h3 {display: none;}
+      body {
+        margin: 30vh 24px 24px 24px;
+      }
+
+      img {
+        width: 100%;
+        margin: 10vh auto 24px auto;
+      }
+
+      h1,
+      h2 {
+        font-size: 5em;
+      }
+
+      p,
+      footer {
+        font-size: 2.5em;
+      }
+
+      h3 {
+        display: none;
+      }
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -53,12 +120,16 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRPKKVE0HB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-FRPKKVE0HB');
   </script>
 </head>
+
 <body>
   <h1>Virich</h1>
   <h3>In my Shadow over the Region</h3>
@@ -128,14 +199,7 @@
     const imagesPositions = [];
     num.innerText = imagesCount;
 
-    $(window).on('load', function(){
-
-      console.log("Window height " + $(window).height());
-      console.log("Image height " + $("#imageFirst").height);
-      difference = $("#imageFirst").height -  $(window).height();
-      difference = difference/2;
-      console.log("Top margin should be " + difference);
-
+    $(window).on('load', function() {
       $("img").each(function() {
         imagesPositions.push($(this).prop("offsetTop"));
       });
@@ -151,12 +215,12 @@
       console.log(imagesPositions);
 
       window.addEventListener('scroll', function(e) {
-        num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
+        num.innerText = getImageNumber(window.scrollY - $(window).height() / 2, imagesPositions) + 1 + "/" + imagesCount;
       });
 
     });
-
   </script>
 
 </body>
+
 </html>
