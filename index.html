@@ -61,8 +61,7 @@
   <h2 id="num"></h2>
 
   <div class="content">
-
-    <img src="img/R1-03654-0004.jpg" alt="room">
+    <img id="#imageFirst" src="img/R1-03654-0004.jpg" alt="room">
     <img src="img/R1-03654-0012.jpg" alt="towel">
     <img src="img/R1-03657-0027.jpg" alt="clouds">
     <img src="img/R1-03655-0009.jpg" alt="mark">
@@ -133,9 +132,15 @@
     */
 
     var imagesCount = document.images.length;
+    var difference = 0;
     const num = document.querySelector('#num');
     const imagesPositions = [];
     num.innerText = imagesCount;
+
+    console.log("Image height " + $("#imageFirst").height + ", window height" + $(window).height);
+    difference = $("#imageFirst").height -  $(window).height;
+    difference = difference/2;
+    console.log("Top margin should be " + difference);
 
     $(window).on('load', function(){
       $("img").each(function() {
