@@ -207,7 +207,10 @@
       function getImageNumber(number, imagesPositions) {
         for (var i = 0; i < imagesPositions.length; ++i) {
           if (number < imagesPositions[i]) {
-            return i+1;
+            if (i < 1) {
+              return 1;
+            }
+            return i;
           }
         }
       }
