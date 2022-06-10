@@ -195,6 +195,7 @@
   <script>
     var imagesCount = document.images.length;
     var difference = 0;
+    var imageNumber = 1;
     const num = document.querySelector('#num');
     const imagesPositions = [];
     num.innerText = imagesCount;
@@ -207,12 +208,7 @@
       function getImageNumber(number, imagesPositions) {
         for (var i = 0; i < imagesPositions.length; ++i) {
           if (number < imagesPositions[i]) {
-            if (i < 1) {
-              return 1;
-            }
-            if (typeof i === 'undefined') {
-              return imagesCount;
-            }
+
             return i;
           }
         }
@@ -221,7 +217,14 @@
       console.log(imagesPositions);
 
       window.addEventListener('scroll', function(e) {
-        num.innerText = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions) + "/" + imagesCount;
+        imageNumber = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions);
+        if (imageNumber < 1) {
+          imageNumber = 1;
+        }
+        if (typeof imageNumber === 'undefined') {
+          imageNumber = imagesCount;
+        }
+        num.innerText =  imageNumber + "/" + imagesCount;
       });
 
     });
