@@ -53,10 +53,9 @@
 </head>
 <body>
   <h1>Virich</h1>
-  <h3>Türkiye</h3>
+  <h3>In my Shadow over the Region</h3>
 
-  <div class="menu">
-  </div>
+  <div class="menu"></div>
 
   <h2 id="num"></h2>
 
@@ -109,28 +108,12 @@
     <img src="img/R1-last.jpg" alt="fish bus last photo">
   </div>
 
-  <footer>&copy;2022, Olya Virich from Krasnodar<br>Telegram&nbsp;<a href="https://t.me/viricholya">@olyavirich</a></footer>
+  <footer>
+    &copy;2022, Olya Virich from Krasnodar<br>
+    Telegram&nbsp;<a href="https://t.me/viricholya">@olyavirich</a>
+  </footer>
 
   <script>
-    /*
-    var stringContent = '';
-
-    $(document).ready(function(){
-        $.getJSON("images.json", function(imagesJson){
-            jQuery.each(imagesJson["objects"], function() {
-              stringContent += ("<img src=\""+$(this).prop("url")+"\">\n");
-              if($(this).prop("alt")){
-                stringContent += ("<p>"+$(this).prop("alt")+"</p>\n");
-              }
-            });
-            console.log(stringContent);
-            $(".content").html(stringContent);
-          }).fail(function(){
-            console.log("An error has occurred.");
-        });
-    });
-    */
-
     var imagesCount = document.images.length;
     var difference = 0;
     const num = document.querySelector('#num');
