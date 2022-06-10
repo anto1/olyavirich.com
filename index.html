@@ -49,6 +49,15 @@
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRPKKVE0HB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FRPKKVE0HB');
+  </script>
 </head>
 <body>
   <h1>Virich</h1>
@@ -119,13 +128,14 @@
     const imagesPositions = [];
     num.innerText = imagesCount;
 
-    console.log("Window height " + $(window).height());
-    console.log("Image height " + $("#imageFirst").height);
-    difference = $("#imageFirst").height -  $(window).height();
-    difference = difference/2;
-    console.log("Top margin should be " + difference);
-
     $(window).on('load', function(){
+
+      console.log("Window height " + $(window).height());
+      console.log("Image height " + $("#imageFirst").height);
+      difference = $("#imageFirst").height -  $(window).height();
+      difference = difference/2;
+      console.log("Top margin should be " + difference);
+
       $("img").each(function() {
         imagesPositions.push($(this).prop("offsetTop"));
       });
