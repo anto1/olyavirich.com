@@ -221,8 +221,6 @@
       console.log(imagesPositions);
 
       window.addEventListener('scroll', function(e) {
-        console.log(window.scrollY);
-        console.log($(window).height()/2);
         num.innerText = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions) + "/" + imagesCount;
       });
 
