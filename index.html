@@ -120,8 +120,8 @@
     const imagesPositions = [];
     num.innerText = imagesCount;
 
-    console.log("Window height" + $(window).height);
-    console.log("Image height " + $("#imageFirst").naturalHeight);
+    console.log("Window height" + $(window).height());
+    console.log("Image height " + $("#imageFirst").height());
     difference = $("#imageFirst").height -  $(window).height;
     difference = difference/2;
     console.log("Top margin should be " + difference);
