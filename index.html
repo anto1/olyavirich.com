@@ -32,7 +32,7 @@
       font-family: "btp", "Inter", helvetica, sans-serif;
       line-height: 1em;
       font-size: 40px;
-      color: #121214;
+      color: #fefeff;
       margin: 0;
     }
 
@@ -216,7 +216,7 @@
       console.log(imagesPositions);
 
       window.addEventListener('scroll', function(e) {
-        imageNumber = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions);        
+        imageNumber = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions);
         if (typeof imageNumber === 'undefined') {
           imageNumber = imagesCount;
         }
