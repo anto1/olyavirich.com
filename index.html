@@ -206,7 +206,7 @@
       });
 
       function getImageNumber(number, imagesPositions) {
-        for (var i = 0; i < imagesPositions.length; ++i) {
+        for (var i = 1; i < imagesPositions.length; ++i) {
           if (number < imagesPositions[i]) {
             return i;
           }
@@ -216,10 +216,7 @@
       console.log(imagesPositions);
 
       window.addEventListener('scroll', function(e) {
-        imageNumber = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions);
-        if (imageNumber < 1) {
-          imageNumber = 1;
-        }
+        imageNumber = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions);        
         if (typeof imageNumber === 'undefined') {
           imageNumber = imagesCount;
         }
