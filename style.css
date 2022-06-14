@@ -90,7 +90,7 @@ a:hover {
 
   h1,
   h3 {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   h2 {
@@ -103,6 +103,7 @@ a:hover {
   }
 
   .mobileHeader {
+    font-size: 4em;
     display: block;
     position: relative;
     text-align: left;
