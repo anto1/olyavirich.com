@@ -78,7 +78,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1080px) {
   body {
     margin: 50vh 24px 24px 24px;
   }
