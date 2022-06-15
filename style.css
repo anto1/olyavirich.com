@@ -59,7 +59,7 @@ footer p {
   text-align: left;
   display: block;
   margin-left: 216px !important;
-  width: 72vh;
+  max-width: 72vh;
 }
 
 footer p:last-child {
