@@ -18,7 +18,7 @@ h3 {
   position: fixed;
   font-family: "btp", "Inter", helvetica, sans-serif;
   line-height: 1em;
-  font-size: 40px;
+  font-size: 5em;
   color: #121214;
   margin: 0;
 }
@@ -40,7 +40,7 @@ h3 {
 
 p {
   font-family: "btp", "Inter", helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #121214;
   display: block;
 }
@@ -55,7 +55,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: left;
   display: block;
   margin-left: 216px !important;
@@ -90,7 +90,7 @@ a:hover {
 
   h1,
   h3 {
-    font-size: 4em;
+    font-size: 3.1em;
   }
 
   h2 {
@@ -99,12 +99,12 @@ a:hover {
 
   p,
   footer {
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-left: 0px !important;
   }
 
   .mobileHeader {
-    font-size: 4em;
+    font-size: 3.1em;
     display: block;
     position: relative;
     text-align: left;
