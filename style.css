@@ -9,7 +9,7 @@ body {
 
 img {
   display: block;
-  margin: 144px auto 24px auto;
+  margin: calc(50vh - 362px) auto 24px auto;
 }
 
 h1,
