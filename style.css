@@ -99,7 +99,7 @@ a:hover {
 
   p,
   footer {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .mobileHeader {
@@ -107,5 +107,6 @@ a:hover {
     display: block;
     position: relative;
     text-align: left;
+    margin-left: 0px !important;
   }
 }
