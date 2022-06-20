@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Not Far Ahead</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta charset="utf-8">
+  <meta name="author" content="Olga Virich">
+  <meta name="designer" content=”Anton Prokopev”>
+  <meta name="keywords" content="photo, film, black and white, photograph, Krasnodar">
+  <meta name=”robots” content=”index,follow”>
+  <meta name="distribution" content="web">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRPKKVE0HB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-FRPKKVE0HB');
+  </script>
+</head>
+
+<body>
+  <h1><a href="virich.html">Virich</a></h1>
+  <h2>Far</h2>
+  <h3 id="num"></h3>
+
+  <div class="content">
+    <p class="mobileHeader">
+      Not Far Ahead
+    </p>
+    <p>I’m not sure that this book is only about the South.</p>
+    <p>Of course, it’s about Russia, but I think there is much of the South in it.</p>
+    <p>I think, not only my family and close ones influenced my attitude to life but also “the southern familiarity” as I like to say.</p>
+    <p>Because of a warm climate people are closer to each other and spend much time outside. When I was a kid, one couldn’t take us back home while we were spending time outside. Our outdoor activities were accompanied by the eyes of mums who were messing around in flower beds and dads swearing under the cars meanwhile. Also every grandma and grandpa who lived both in our or the neighbours' yard were ready to give water to any kid who was not able to reach the water pump by himself anymore. We knocked on any door on the first floor and the thirst problem was solved at once.</p>
+    <p>Because of this common intimacy and also the disaster of infernal heat which bands southern people together, and all the people from the South become relatives, because they were born in the same region.</p>
+    <p>The familiarity, common to the close ones and shocking to the others, comes from this. Also a sense of humour as a method of protection against all the woes is raised in every southerner from childhood.</p>
+    <p>Humour and familiarity are the things that always save me when I’m away from my region and make people born to the south of Rostov-on-Don feel like I’m one of them.</p>
+    <p>Sentimentality is also a distinctive characteristic of a southerner. A real southerner sniffs the scent of blooming apricot to its lungs' limits (if you know the scent, then you understand - it’s the scent of spring and a new crush!). A real southerner takes a sled and makes his family go sledding even if it starts to snow at 1 a.m., because tomorrow it won’t snow and most likely it won’t snow until next winter. A real southerner is out all night because it’s incredibly hot during the daytime! A real southerner doesn’t have compassion for one's feelings if he doesn’t like anything, but he shows concern if he is touched.</p>
+    <p>In this book I gathered the moments that I saw with a southern perspective.</p>
+    <img id="#imageFirst" src="img/R1-03654-0004.jpg" alt="room">
+  </div>
+
+  <footer>
+    <p>&copy;2022, Olya Virich<br>
+    Telegram&nbsp;<a href="https://t.me/viricholya">@viricholya</a></p>
+  </footer>
+
+  <script>
+    var imagesCount = document.images.length;
+    var difference = 0;
+    var imageNumber = 1;
+    const num = document.querySelector('#num');
+    const imagesPositions = [];
+    num.innerText = imagesCount;
+
+    $(window).on('load', function() {
+      $("img").each(function() {
+        imagesPositions.push($(this).prop("offsetTop"));
+      });
+
+      function getImageNumber(number, imagesPositions) {
+        for (var i = 1; i < imagesPositions.length; ++i) {
+          if (number < imagesPositions[i]) {
+            return i;
+          }
+        }
+      }
+
+      window.addEventListener('scroll', function(e) {
+        imageNumber = getImageNumber(window.scrollY+$(window).height()/2, imagesPositions);
+        if (typeof imageNumber === 'undefined') {
+          imageNumber = imagesCount;
+        }
+        num.innerText =  imageNumber + "/" + imagesCount;
+      });
+
+    });
+  </script>
+</body>
+</html>
