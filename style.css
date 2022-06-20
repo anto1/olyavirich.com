@@ -61,7 +61,7 @@ footer {
   margin: 50vh 0 48px 0;
 }
 
-footer p {
+footer p, about p {
   font-size: 1.2em;
   text-align: left;
   display: block;
