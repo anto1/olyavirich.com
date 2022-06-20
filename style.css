@@ -27,20 +27,18 @@ h2,
 h3 {
   position: fixed;
   margin: 0;
+  top: 24px;
 }
 
 h1 {
-  top: 24px;
   left: 24px;
 }
 
 h2 {
-  top: 24px;
   left: 240px;
 }
 
 h3 {
-  top: 24px;
   right: 24px;
 }
 
