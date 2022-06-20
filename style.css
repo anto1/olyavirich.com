@@ -130,4 +130,11 @@ a:hover {
     position: relative;
     text-align: left;
   }
+
+  .mobileBack {
+    display: block;
+    top: 24px;
+    right: 24px;
+    position: fixed;
+  }
 }
