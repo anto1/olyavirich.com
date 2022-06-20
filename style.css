@@ -14,14 +14,20 @@ img {
 
 h1,
 h2,
-h3 {
-  position: fixed;
+h3,
+h4 {
   font-weight: normal;
   font-family: "btp", "Inter", helvetica, sans-serif;
   line-height: 1em;
   font-size: 3.1em;
   color: #121214;
-  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  position: fixed;
+  margin: 0;  
 }
 
 h1 {
