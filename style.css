@@ -18,8 +18,8 @@ h3,
 h4 {
   font-weight: normal;
   font-family: "btp", "Inter", helvetica, sans-serif;
-  line-height: 1em;
-  font-size: 3.1em;
+  line-height: 80px;
+  font-size: 52px;
   color: #121214;
 }
 
@@ -47,7 +47,7 @@ h3 {
 
 p {
   font-family: "btp", "Inter", helvetica, sans-serif;
-  font-size: 1.2em;
+  font-size: 20px;
   color: #121214;
   display: block;
 }
@@ -62,7 +62,7 @@ footer {
 }
 
 footer p, .about p {
-  font-size: 1.2em;
+  font-size: 20px;
   text-align: left;
   display: block;
   margin-left: 216px;
