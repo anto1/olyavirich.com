@@ -130,7 +130,7 @@ a:hover {
     font-size: 20px;
   }
 
-  footer p, .about p {
+  footer p, .about p, .preface p {
     margin-left: 0px !important;
   }
 
