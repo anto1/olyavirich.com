@@ -99,19 +99,15 @@ a:hover {
   }
 
   h1,
+  h2,
   h3 {
     font-size: 41px;
+    position: fixed;
+    margin: 0;
   }
 
   h2 {
     display: none;
-  }
-
-  h1,
-  h2,
-  h3 {
-    position: fixed;
-    margin: 0;
   }
 
   p,
