@@ -18,7 +18,6 @@ h3,
 h4 {
   font-weight: normal;
   font-family: "btp", "Inter", helvetica, sans-serif;
-  line-height: 80px;
   font-size: 52px;
   color: #121214;
 }
@@ -101,7 +100,7 @@ a:hover {
 
   h1,
   h3 {
-    font-size: 52px;
+    font-size: 41px;
   }
 
   h2 {
@@ -117,7 +116,7 @@ a:hover {
 
   p,
   footer {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   footer p {
@@ -125,7 +124,7 @@ a:hover {
   }
 
   .mobileHeader {
-    font-size: 52px;
+    font-size: 41px;
     display: block;
     position: relative;
     text-align: left;
