@@ -101,7 +101,7 @@ a:hover {
 
   h1,
   h3 {
-    font-size: 3.1em;
+    font-size: 52px;
   }
 
   h2 {
@@ -117,7 +117,7 @@ a:hover {
 
   p,
   footer {
-    font-size: 1.2em;
+    font-size: 25px;
   }
 
   footer p {
@@ -125,7 +125,7 @@ a:hover {
   }
 
   .mobileHeader {
-    font-size: 3.1em;
+    font-size: 52px;
     display: block;
     position: relative;
     text-align: left;
