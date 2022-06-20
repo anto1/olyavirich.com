@@ -88,6 +88,7 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 90vw;
 }
 
 @media screen and (max-width: 1080px) {
