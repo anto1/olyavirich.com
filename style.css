@@ -138,4 +138,10 @@ a:hover {
     right: 24px;
     position: fixed;
   }
+
+  .www {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
