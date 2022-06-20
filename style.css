@@ -84,6 +84,12 @@ a:hover {
   display: none;
 }
 
+.www {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 1080px) {
   body {
     margin: 168px 24px 24px 24px;
@@ -94,7 +100,7 @@ a:hover {
     margin: 10vh auto 24px auto;
   }
 
-  #imageFirst {
+  .imageFirst {
     margin-top: 24px;
   }
 
@@ -137,11 +143,5 @@ a:hover {
     top: 24px;
     right: 24px;
     position: fixed;
-  }
-
-  .www {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
