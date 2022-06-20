@@ -16,6 +16,7 @@ h1,
 h2,
 h3 {
   position: fixed;
+  font-weight: normal;
   font-family: "btp", "Inter", helvetica, sans-serif;
   line-height: 1em;
   font-size: 3.1em;
