@@ -140,6 +140,7 @@ a:hover {
   }
 
   .mobileBack {
+    text-align: right;
     display: block;
     top: 24px;
     right: 24px;
