@@ -100,14 +100,20 @@ a:hover {
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-size: 41px;
-    position: fixed;
-    margin: 0;
   }
 
   h2 {
     display: none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    position: fixed;
+    margin: 0;
   }
 
   p,
@@ -115,7 +121,7 @@ a:hover {
     font-size: 20px;
   }
 
-  footer p {
+  footer p, .about p {
     margin-left: 0px !important;
   }
 
