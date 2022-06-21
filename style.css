@@ -95,6 +95,7 @@ a:hover {
 
 .imageSingle {
   max-height: 45vw;
+  max-width: 90vh;
 }
 
 .imagesDouble {
@@ -106,6 +107,7 @@ a:hover {
 .imagesDouble img {
   display: inline-block;
   max-width: 45vw;
+  max-height: 90vh;
 }
 
 @media screen and (max-width: 1080px) {
