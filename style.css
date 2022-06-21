@@ -93,6 +93,14 @@ a:hover {
   margin-top: calc(50vh - 362px);
 }
 
+.imagesDouble {
+  display: block;
+}
+
+.imagesDouble img {
+  display: inline-block;
+}
+
 @media screen and (max-width: 1080px) {
   body {
     margin: 168px 24px 24px 24px;
