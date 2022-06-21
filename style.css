@@ -96,12 +96,12 @@ a:hover {
 .imagesDouble {
   display: block;
   margin: calc(50vh - 362px) auto 24px auto;
+  text-align: center;
 }
 
 .imagesDouble img {
   display: inline-block;
-  max-width: 40vw;
-  margin: 0 24px;
+  max-width: 45vw;
 }
 
 @media screen and (max-width: 1080px) {
